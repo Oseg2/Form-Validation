@@ -46,10 +46,7 @@ const handleSubmit = (event, index) => {
     if (inputElements[i].className.includes("required")) {
       //initializing i to be equal to 0, then saying we want i to count to all input elements. We are itereating thru the input elments
       if (inputElements[i].className.includes("required")) {
-        //if the class name of current input element that where on is equal to required like in #6
         if (inputElements[i].value.trim() === "") {
-          //The part in #6 talking about if input elements have a white space or is empty We use trim to delete spaces automatically
-
           handleError(
             "Required fields must have a value that is not empty or whitespace.",
             index,
@@ -101,7 +98,6 @@ const handleSubmit = (event, index) => {
         }
 
         // Check if the username is greater than 8 characters
-        //#11
         if (inputElements[i].value.length < 8) {
           handleError(
             "Username fields must contain at least 8 characters.",
